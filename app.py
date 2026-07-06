@@ -13,7 +13,7 @@ st.set_page_config(page_title="AI Resume Reviewer", page_icon="📄", layout="ce
 
 GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "")  # set in Streamlit Cloud secrets
 MODEL = "llama-3.3-70b-versatile"
-POSTHOG_API_KEY = st.secrets["phc_xb2iTiQpbCw4yeHneiZjSRgbqgcVbQvFkTMDgeZuWq7r"]
+POSTHOG_API_KEY = st.secrets["POSTHOG_API_KEY"]
 
 posthog = Posthog(
     project_api_key=POSTHOG_API_KEY,
